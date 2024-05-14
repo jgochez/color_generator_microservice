@@ -19,8 +19,11 @@ def random_color_generator():
         # Receive the response containing the color hex
         color_hex = socket.recv_string()
         if color_hex:
+            # use for debugging
             msg = f"Received color: {color_hex}"
             print(msg)
+        else:
+            print("Error: try again.")
 
 
 if __name__ == "__main__":
