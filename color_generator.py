@@ -6,7 +6,7 @@ def generate_random_color():
     # Setup ZeroMQ with REP socket
     context = zmq.Context()
     socket = context.socket(zmq.REP)
-    socket.bind("tcp://localhost:5557")
+    socket.bind("tcp://localhost:5558")
 
     while True:
         # Wait for the next request from the client

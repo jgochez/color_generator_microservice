@@ -5,7 +5,7 @@ def random_color_generator():
     # Set up ZeroMQ with REQ socket
     context = zmq.Context()
     socket = context.socket(zmq.REQ)
-    socket.connect("tcp://localhost:5557")
+    socket.connect("tcp://localhost:5558")
 
     # Main loop to send requests and receive responses
     while True:
