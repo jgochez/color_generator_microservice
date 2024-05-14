@@ -40,6 +40,8 @@ SAMPLE CALL:
 
     User/your/current/directory %
 
+UML Diagram:
+![alt text](./UML.png "UML Diagram visualizing microservices")
 
     
     
