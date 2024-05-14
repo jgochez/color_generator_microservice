@@ -1,20 +1,28 @@
+Mitigation Plan:
+
 A) For which teammate did you implement “Microservice A”?
-    Christopher Lawrence
+    -  Christopher Sanchez
+
 B) What is the current status of the microservice? Hopefully, it’s done!
-    Completely done and ready to copy from GITHUB
+    -  Completely done and ready to copy from GITHUB
+
 C) If the microservice isn’t done, which parts aren’t done and when will they be done?
-    n/a
+    -  n/a
+
 D) How is your teammate going to access your microservice? Should they get your code from GitHub? Should they run your code locally?
 Is your microservice hosted somewhere? Etc.
-    The entire folder is up on Github on "https://github.com/jgochez/color_generator_microservice/tree/main" where he can clone it.
-    To run the microservice the code is set up as local connections at any preferred port (currently set up on localhost:5557).
+    -  The entire folder is up on Github on "https://github.com/jgochez/color_generator_microservice/tree/main" where he can clone it.
+       To run the microservice the code is set up as local connections at any preferred port (currently set up on localhost:5557).
+
 E) If your teammate cannot access/call YOUR microservice, what should they do? Can you be available to help them? What’s your availability?
-    I am available all day Mon - Fri from 9am - 9pm CST for any assistance. I can also send the files over Discord which works just fine
+    -  I am available all day Mon - Fri from 9am - 9pm CST for any assistance. I can also send the files over Discord which works just fine
+
 F) If your teammate cannot access/call your microservice, by when do they need to tell you?
-    They can contact me anytime on Discord. I check it frequently, so I can guarantee a response within the same day, possibly hour
+    -  They can contact me anytime on Discord. I check it frequently, so I can guarantee a response within the same day, possibly hour
+
 G) Is there anything else your teammate needs to know? Anything you’re worried about? Any assumptions you’re making? Any other mitigations
 / backup plans you want to mention or want to discuss with your teammate?
-    As mentioned in the README.md, the "color_generator.py" can be implemented as is. The requirement was that upon calling the file you received
-    a single string of a hex formatted color. The only thing to keep in mind is that this file will only work if it receives the string "request_color".
-    So as long as the request by Christopher's main page sends this string at the time of request it should all work well! The code is set up
-    simple enough that any back up plan would just be to recreate it. I cannot imagine this ever happening as
+    -  As mentioned in the README.md, the "color_generator.py" can be implemented as is. The requirement was that upon calling the file you received
+       a single string of a hex formatted color. The only thing to keep in mind is that this file will only work if it receives the string "request_color".
+       So as long as the request by Christopher's main page sends this string at the time of request it should all work well! The code is set up
+       simple enough that any error would have to come from a ZeroMQ server and not the code itself. At that point I would just change the port.
