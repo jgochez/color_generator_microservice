@@ -25,6 +25,10 @@ RECEIVING DATA:
     For debugging purposes, when this data is received the file will 
     print out: "Received color: #FFFFFF"
 
+    NOTE: "color_request.py" is used as a file to test the generator,
+          this file is not needed. Only "color_generator.py" is the 
+          microservice required by the assignment.
+
     
 SAMPLE CALL:
 
